@@ -1,0 +1,137 @@
+#main_container{
+    width: 100vw;
+    position: relative;
+}
+#main_container #main_search_wraper{
+    width: 1320px;
+    height: 120px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 2px rgba(0,0,0,0.25);
+    margin: -60px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main_container #main_search_wraper form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main_container #main_info_wraper{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main_container #main_info_wraper .bus_info p{
+    text-align: center;
+    font-weight: bold;
+    vertical-align: center;
+    margin-top: 1rem;
+}
+select option[value=""][disabled] {
+	display: none;
+}
+#main_container #main_search_wraper #dep{
+    font-size: 16px;
+    padding: 0 8px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(242, 231, 250);
+    margin: 0 0.2rem;
+}
+#main_container #main_search_wraper #exchange{
+    border: none;
+    width: 26px;
+    height: 26px;
+}
+#main_container #main_search_wraper #arr{
+    font-size: 16px;
+    padding: 0 8px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(242, 231, 250);
+    margin: 0 0.2rem;
+}
+#main_container #main_search_wraper #depDate{
+    font-size: 16px;
+    padding: 0 8px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(242, 231, 250);
+    margin: 0 0.2rem;
+}
+#main_container #main_search_wraper #arrDate{
+    font-size: 16px;
+    padding: 0 8px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(242, 231, 250);
+    margin: 0 0.2rem;
+}
+#main_container #main_search_wraper #submitBtn{
+    font-size: 16px;
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(242, 231, 250);
+    margin: 0 0.2rem;
+}
+
+#main_container #main_info_wraper #busDepPlace{
+    display: flex;
+    flex-direction: column;
+}
+#main_container #main_info_wraper #busDepPlandTime > p{
+
+}
+#main_container #main_info_wraper #busArrPlace > p{
+
+}
+#main_container #main_info_wraper #busArrplandTime > p{
+
+}
+#main_container #main_info_wraper #busGrade > p{
+
+}
+#main_container #main_info_wraper #busCharge > p{
+
+}
+#main_container #main_info_wraper #main_info_title{
+    width: 1320px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: rgba(201, 123, 253, 0.25);
+}
+#main_container #main_info_wraper #main_info_title > p{
+    width: 140px;
+    height: 40px;
+    margin: 40px 20px 20px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    
+}
+#main_container #main_info_wraper #main_info_detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#main_container #main_info_wraper #main_info_detail > div{
+    width: 140px;
+    height: 40px;
+    margin: 20px;
+    text-align: center;
+}

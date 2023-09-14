@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TADAGO</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+</head>
+<body>
+    <header id="header_container">
+        <div id="header_wraper">
+            <div id="header_menu">
+                <ul id="header_menu_main">
+                    <li id="header_logo">
+                        <a href="index.html">
+                            <img src="./assets/logo/main_logo.png" alt="TADAGO" />
+                        </a>
+                    </li>
+                    <li class="header_main_list">
+                        <a href="#">버스</a>
+                    </li>
+                    <li class="header_main_list">
+                        <a href="#">기차</a>
+                    </li>
+                    <li class="header_main_list">
+                        <a href="#">항공</a>
+                    </li>
+                    <li class="header_main_list">
+                        <a href="#">여객</a>
+                    </li>
+                </ul>
+                <ul id="header_menu_util">
+                    <li class="header_util_list">
+                        <a href="#">예매내역</a>
+                    </li>
+                    <li class="header_util_list">
+                        <a href="#">내정보</a>
+                    </li>
+                    <li class="header_util_list">
+                        <a href="#">로그인</a>
+                    </li>
+                    <li class="header_util_list">
+                        <a href="#">가입</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="header_mes">
+                <h2>즐겁고 행복한 마음까지 풍요로운 여행</h2>
+                <h1>기차, 버스, 항공 및 여객까지 예매가능</h1>
+            </div>
+        </div>
+    </header>
+    <main id="main_container">
+        <div id="main_search_wraper">
+            <form name="Bus" method="get" action="">
+                <select name="depPlace" id="dep">
+                    <option value="" disabled selected>출발 : 도시, 역, 공항 또는 항구</option>
+                    <option value="NAEK010">서울경부</option>
+                    <option value="NAEK020">센트럴시티(서울)</option>
+                    <option value="NAEK030">동서울</option>
+                    <option value="NAEK100">인천</option>
+                    <option value="NAEK105">인천공항T1</option>
+                    <option value="NAEK117">인천공항T2</option>
+                    <option value="NAEK300">대전복합</option>
+                    <option value="NAEK305">대전청사</option>
+                    <option value="NAEK307">대전도룡</option>
+                    <option value="NAEK801">동대구</option>
+                    <option value="NAEK805">서대구</option>
+                    <option value="NAEK807">대구용계</option>
+                    <option value="NAEK700">부산</option>
+                    <option value="NAEK703">서부산(사상)</option>
+                    <option value="NAEK500">광주(유스퀘어)</option>
+                    <option value="NAEK503">광주비아</option>
+                    <option value="NAEK715">울산</option>
+                    <option value="NAEK716">울산신복</option>
+                </select>
+                <img src="./assets/ico/exchange.png" id="exchange" onclick="exchanger()">
+                <select name="arrPlace" id="arr">
+                    <option value="" disabled selected>도착 : 도시, 역, 공항 또는 항구</option>
+                    <option value="NAEK010">서울경부</option>
+                    <option value="NAEK020">센트럴시티(서울)</option>
+                    <option value="NAEK030">동서울</option>
+                    <option value="NAEK100">인천</option>
+                    <option value="NAEK105">인천공항T1</option>
+                    <option value="NAEK117">인천공항T2</option>
+                    <option value="NAEK300">대전복합</option>
+                    <option value="NAEK305">대전청사</option>
+                    <option value="NAEK307">대전도룡</option>
+                    <option value="NAEK801">동대구</option>
+                    <option value="NAEK805">서대구</option>
+                    <option value="NAEK807">대구용계</option>
+                    <option value="NAEK700">부산</option>
+                    <option value="NAEK703">서부산(사상)</option>
+                    <option value="NAEK500">광주(유스퀘어)</option>
+                    <option value="NAEK503">광주비아</option>
+                    <option value="NAEK715">울산</option>
+                    <option value="NAEK716">울산신복</option>
+                </select>
+                <input type="text" id="depDate" placeholder="가는날">
+                <input type="text" id="arrDate" placeholder="오는날">
+                <input type="button" value="제출" onclick="bus_info_finding()" id="submitBtn">
+            </form>
+        </div>
+        <div id="main_info_wraper">
+            <div id="main_info_title">
+                <p>출발지</p>
+                <p>출발시간</p>
+                <p>도착지</p>
+                <p>도착시간</p>
+                <p>버스등급</p>
+                <p>요금</p>
+            </div>
+            <div id="main_info_detail">
+                <div id="busDepPlace" class="bus_info"></div>
+                <div id="busDepPlandTime" class="bus_info" onclick="console.log(this)"></div>
+                <div id="busArrPlace" class="bus_info"></div>
+                <div id="busArrPlandTime" class="bus_info"></div>
+                <div id="busGrade" class="bus_info"></div>
+                <div id="busCharge" class="bus_info"></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="./js/bus_info.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
